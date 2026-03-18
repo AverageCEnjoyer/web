@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nexus Conseil — Cabinet de conseil en stratégie</title>
+<meta name="description" content="Nexus Conseil accompagne les entreprises dans leur transformation stratégique, digitale et organisationnelle."/>
+<meta property="og:title" content="Nexus Conseil"/>
+<meta property="og:description" content="Cabinet de conseil en stratégie et transformation d'entreprise."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nexusconseil.fr"/>
+<meta property="og:image" content="https://nexusconseil.fr/images/og.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.hero-stats{display:flex;gap:40px;margin-top:48px;padding-top:48px;border-top:1px solid rgba(245,240,232,0.1);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold);line-height:1;}
+.stat-label{font-size:0.8rem;color:rgba(245,240,232,0.5);letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;}
+.services-strip{background:var(--cream2);}
+.video-wrap{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:var(--green);}
+.video-wrap video{width:100%;height:100%;object-fit:cover;opacity:0.7;}
+.video-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:32px;background:linear-gradient(to top,rgba(14,31,24,0.85) 0%,transparent 60%);}
+.video-overlay h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--cream);margin-bottom:8px;}
+.video-overlay p{color:rgba(245,240,232,0.7);font-size:0.9rem;}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.split-img{border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:var(--cream2);display:flex;align-items:center;justify-content:center;}
+.split-img-inner{width:100%;height:100%;object-fit:cover;}
+.placeholder-img{width:100%;height:100%;background:linear-gradient(135deg,var(--green2) 0%,var(--green) 100%);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:3rem;color:rgba(245,240,232,0.15);}
+@media(max-width:768px){.split{grid-template-columns:1fr;}.hero-stats{flex-wrap:wrap;gap:24px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="pages/about.html">À propos</a></li>
+    <li><a href="pages/services.html">Services</a></li>
+    <li><a href="pages/gallery.html">Galerie</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <div class="hero-bg"></div>
+  <div class="hero-content" style="padding:80px 5vw;">
+    <p class="hero-eyebrow">Cabinet de conseil · Paris · Fondé en 2008</p>
+    <h1>Votre ambition,<br/><em>notre stratégie.</em></h1>
+    <p>Nous accompagnons les dirigeants dans leurs décisions les plus complexes. Stratégie, transformation digitale, organisation — nous construisons l'avenir avec vous.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="pages/services.html" class="btn btn-gold">Nos services →</a>
+      <a href="pages/contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">200+</div><div class="stat-label">Missions réalisées</div></div>
+      <div><div class="stat-num">15</div><div class="stat-label">Années d'expérience</div></div>
+      <div><div class="stat-num">98%</div><div class="stat-label">Clients satisfaits</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES APERÇU -->
+<section class="services-strip">
+  <p class="section-label">Ce que nous faisons</p>
+  <h2 class="section-title">Des solutions <em>sur mesure</em></h2>
+  <p class="section-sub">Chaque entreprise est unique. Nos consultants senior adaptent chaque mission à vos enjeux spécifiques.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Stratégie</h3>
+      <p>Définissez votre cap avec clarté. Analyse concurrentielle, vision long terme, modèle économique.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔄</div>
+      <h3>Transformation</h3>
+      <p>Pilotez le changement avec méthode. Conduite du changement, agilité organisationnelle.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💻</div>
+      <h3>Digital</h3>
+      <p>Accélérez votre maturité digitale. Audit SI, feuille de route data, automatisation.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Finance</h3>
+      <p>Optimisez votre performance financière. Contrôle de gestion, restructuration, M&amp;A.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌍</div>
+      <h3>International</h3>
+      <p>Développez votre présence à l'international. Expansion, partenariats, due diligence.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>RH &amp; Culture</h3>
+      <p>Alignez votre culture sur vos ambitions. Talent management, leadership, employer branding.</p>
+    </div>
+  </div>
+  <div style="margin-top:40px;">
+    <a href="pages/services.html" class="btn btn-green">Tous nos services →</a>
+  </div>
+</section>
+
+<!-- VIDEO PRÉSENTATION -->
+<section>
+  <div class="split">
+    <div>
+      <p class="section-label">Notre approche</p>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Conseil de <em>terrain,</em> résultats mesurables</h2>
+      <p style="color:var(--muted);margin-bottom:24px;">Nous ne livrons pas des rapports. Nous nous engageons aux côtés de vos équipes jusqu'à la mise en œuvre et la mesure des résultats.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:var(--muted);">
+          <span style="color:var(--gold);font-size:1.1rem;flex-shrink:0;">✓</span>
+          Diagnostic en 2 semaines, recommandations actionnables
+        </li>
+        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:var(--muted);">
+          <span style="color:var(--gold);font-size:1.1rem;flex-shrink:0;">✓</span>
+          Consultants senior uniquement, pas de juniors livrés en autonomie
+        </li>
+        <li style="display:flex;gap:12px;align-items:flex-start;font-size:0.9rem;color:var(--muted);">
+          <span style="color:var(--gold);font-size:1.1rem;flex-shrink:0;">✓</span>
+          Engagement sur les résultats, pas seulement les livrables
+        </li>
+      </ul>
+      <a href="pages/about.html" class="btn btn-green">Découvrir l'équipe →</a>
+    </div>
+    <div class="video-wrap">
+      <video autoplay muted loop playsinline poster="">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+      </video>
+      <div class="video-overlay">
+        <h3>Notre méthode en action</h3>
+        <p>Découvrez comment nous transformons les défis en opportunités.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section style="background:var(--cream2);">
+  <p class="section-label text-center">Ils nous font confiance</p>
+  <h2 class="section-title text-center">Témoignages <em>clients</em></h2>
+  <p class="section-sub" style="margin:0 auto 48px;text-align:center;">La satisfaction de nos clients est notre meilleure carte de visite.</p>
+  <div class="grid-3">
+    <div class="testimonial">
+      <blockquote>« Nexus Conseil nous a aidés à doubler notre chiffre d'affaires en 18 mois. Une équipe d'exception, pragmatique et engagée. »</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AM</div>
+        <div>
+          <div class="testimonial-name">Aline Moreau</div>
+          <div class="testimonial-role">PDG, Groupe Lumière</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <blockquote>« La transformation digitale de notre DSI était un chantier complexe. Nexus l'a mené avec une maîtrise remarquable. »</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">TL</div>
+        <div>
+          <div class="testimonial-name">Thomas Laurent</div>
+          <div class="testimonial-role">DSI, Meridian SA</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <blockquote>« Un regard externe d'une qualité rare. Ils ont su identifier les leviers que nous n'aurions jamais vus seuls. »</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">SC</div>
+        <div>
+          <div class="testimonial-name">Sophie Chen</div>
+          <div class="testimonial-role">DG, Atelier Beaumont</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--green);text-align:center;">
+  <p class="section-label" style="color:var(--gold);">Passons à l'action</p>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);color:var(--cream);margin-bottom:16px;">Prêt à transformer votre entreprise ?</h2>
+  <p style="color:rgba(245,240,232,0.65);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;">Prenons 30 minutes pour explorer comment Nexus Conseil peut vous aider.</p>
+  <a href="pages/contact.html" class="btn btn-gold">Demander un rendez-vous</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Nexus<span>.</span></span>
+      <p>Cabinet de conseil en stratégie et transformation. Nous accompagnons les dirigeants depuis 2008.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/about.html">À propos</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/gallery.html">Galerie</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="pages/services.html">Stratégie</a></li>
+        <li><a href="pages/services.html">Transformation</a></li>
+        <li><a href="pages/services.html">Digital</a></li>
+        <li><a href="pages/services.html">Finance</a></li>
+        <li><a href="pages/services.html">International</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@nexusconseil.fr">contact@nexusconseil.fr</a></li>
+        <li><a href="tel:+33140123456">+33 1 40 12 34 56</a></li>
+        <li><a href="#">12 rue du Faubourg Saint-Honoré, Paris 8e</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Nexus Conseil SAS — Tous droits réservés</span>
+    <span style="display:flex;gap:20px;">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">CGU</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

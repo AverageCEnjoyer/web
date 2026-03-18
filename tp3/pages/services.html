@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Services — Nexus Conseil</title>
+<meta name="description" content="Stratégie, transformation digitale, finance, RH : découvrez tous les services de Nexus Conseil."/>
+<meta property="og:title" content="Nos services — Nexus Conseil"/>
+<meta property="og:type" content="website"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+details{border:1px solid var(--border);border-radius:8px;background:var(--white);margin-bottom:12px;overflow:hidden;transition:box-shadow 0.2s;}
+details[open]{box-shadow:var(--shadow);}
+summary{padding:22px 28px;font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--green);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;font-weight:600;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:'+';font-family:'Outfit',sans-serif;font-size:1.4rem;color:var(--gold);font-weight:300;transition:transform 0.3s;}
+details[open] summary::after{content:'−';}
+.details-body{padding:0 28px 24px;}
+.details-body p{color:var(--muted);font-size:0.9rem;margin-bottom:16px;}
+.details-body ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.details-body li{font-size:0.88rem;color:var(--text);padding-left:20px;position:relative;}
+.details-body li::before{content:'→';position:absolute;left:0;color:var(--gold);}
+.service-header{display:flex;align-items:center;gap:14px;}
+.service-icon{font-size:1.4rem;}
+.pricing-table{width:100%;border-collapse:collapse;margin-top:16px;}
+.pricing-table th{background:var(--green);color:var(--cream);font-family:'Outfit',sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:16px 20px;text-align:left;}
+.pricing-table td{padding:16px 20px;font-size:0.9rem;border-bottom:1px solid var(--border);vertical-align:top;}
+.pricing-table tr:last-child td{border-bottom:none;}
+.pricing-table tr:nth-child(even) td{background:var(--cream2);}
+.pricing-table td:first-child{font-weight:500;color:var(--green);}
+.badge-pop{background:var(--gold);color:var(--green);font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:0.08em;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <p class="section-label">Notre offre</p>
+  <h1>Nos <em style="font-style:italic;color:var(--gold);">services</em></h1>
+  <p>Six domaines d'expertise, une promesse : des résultats concrets et mesurables.</p>
+</div>
+
+<!-- SERVICES ACCORDION -->
+<section>
+  <p class="section-label">Ce que nous faisons</p>
+  <h2 class="section-title">Domaines d'<em>expertise</em></h2>
+
+  <details open>
+    <summary><div class="service-header"><span class="service-icon">🎯</span> Stratégie d'entreprise</div></summary>
+    <div class="details-body">
+      <p>Nous aidons vos dirigeants à définir une vision claire et à prioriser les choix stratégiques qui feront la différence. De l'analyse à l'exécution, nous sommes à vos côtés.</p>
+      <ul>
+        <li>Diagnostic stratégique et analyse concurrentielle (Porter, PESTEL, SWOT)</li>
+        <li>Définition de la vision et des objectifs à 3-5 ans</li>
+        <li>Business model innovation et nouveaux relais de croissance</li>
+        <li>Stratégie de portefeuille et arbitrages d'investissement</li>
+        <li>Roadmap de mise en œuvre et suivi KPI</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><div class="service-header"><span class="service-icon">🔄</span> Transformation organisationnelle</div></summary>
+    <div class="details-body">
+      <p>La transformation réussie passe par les hommes. Nous accompagnons le changement avec méthode, en intégrant la dimension humaine dès le départ.</p>
+      <ul>
+        <li>Conduite du changement et communication interne</li>
+        <li>Redesign des structures organisationnelles</li>
+        <li>Agilité à l'échelle (SAFe, LeSS, Spotify model)</li>
+        <li>Optimisation des processus opérationnels (Lean, Six Sigma)</li>
+        <li>Gestion de programme de transformation complexe</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><div class="service-header"><span class="service-icon">💻</span> Transformation digitale</div></summary>
+    <div class="details-body">
+      <p>Du diagnostic SI à la gouvernance data, en passant par l'IA générative : nous vous aidons à tirer parti du digital pour créer de la valeur durable.</p>
+      <ul>
+        <li>Audit du système d'information et feuille de route digitale</li>
+        <li>Stratégie data et gouvernance de la donnée</li>
+        <li>Intelligence artificielle générative : cas d'usage et déploiement</li>
+        <li>Cybersécurité et conformité RGPD</li>
+        <li>Sélection et intégration de solutions cloud (ERP, CRM, BI)</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><div class="service-header"><span class="service-icon">📊</span> Finance & Performance</div></summary>
+    <div class="details-body">
+      <p>Nous optimisons votre performance financière à court et long terme, de la trésorerie à la stratégie M&A.</p>
+      <ul>
+        <li>Optimisation du contrôle de gestion et du reporting</li>
+        <li>Réduction des coûts et amélioration des marges</li>
+        <li>Due diligence acheteur/vendeur (M&A)</li>
+        <li>Restructuration financière et plan de retournement</li>
+        <li>Préparation à la levée de fonds ou à l'introduction en bourse</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><div class="service-header"><span class="service-icon">🌍</span> Développement international</div></summary>
+    <div class="details-body">
+      <p>Vous souhaitez conquérir de nouveaux marchés ? Notre réseau international et notre expertise locale vous ouvrent les portes.</p>
+      <ul>
+        <li>Étude de marché et sélection des pays cibles</li>
+        <li>Stratégie d'entrée (filiale, JV, partenariat, acquisition)</li>
+        <li>Accompagnement réglementaire et culturel</li>
+        <li>Construction des équipes locales</li>
+        <li>Suivi de la performance internationale</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary><div class="service-header"><span class="service-icon">🤝</span> RH & Culture d'entreprise</div></summary>
+    <div class="details-body">
+      <p>Le capital humain est votre premier avantage compétitif. Nous vous aidons à l'attirer, le développer et le fidéliser.</p>
+      <ul>
+        <li>Diagnostic culture et plan de transformation culturelle</li>
+        <li>Développement du leadership et coaching de dirigeants</li>
+        <li>Stratégie talent et marque employeur</li>
+        <li>GPEC et gestion prévisionnelle des compétences</li>
+        <li>Programmes diversité, équité et inclusion (DEI)</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<!-- TABLEAU DE TARIFS -->
+<section style="background:var(--cream2);">
+  <p class="section-label">Nos formules</p>
+  <h2 class="section-title">Tableau de <em>tarifs</em></h2>
+  <p class="section-sub">Des formules adaptées à la taille et aux enjeux de votre organisation.</p>
+  <div style="overflow-x:auto;">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Formule</th>
+          <th>Périmètre</th>
+          <th>Durée</th>
+          <th>Équipe dédiée</th>
+          <th>Tarif indicatif</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Diagnostic Flash</td>
+          <td colspan="1">1 domaine ciblé</td>
+          <td>2 semaines</td>
+          <td>1 consultant senior</td>
+          <td>À partir de 12 000 €</td>
+        </tr>
+        <tr>
+          <td>Mission Stratégique <span class="badge-pop">Populaire</span></td>
+          <td rowspan="1">Multi-domaines</td>
+          <td>1 à 3 mois</td>
+          <td>2 à 3 consultants</td>
+          <td>À partir de 45 000 €</td>
+        </tr>
+        <tr>
+          <td>Programme Transformation</td>
+          <td>Entreprise complète</td>
+          <td>6 à 18 mois</td>
+          <td>4 à 8 consultants</td>
+          <td>Sur devis</td>
+        </tr>
+        <tr>
+          <td>Conseil Continu</td>
+          <td>Accompagnement récurrent</td>
+          <td>Abonnement annuel</td>
+          <td>1 associé référent</td>
+          <td>À partir de 3 500 €/mois</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.8rem;color:var(--muted);margin-top:16px;">* Tarifs HT. Devis personnalisé gratuit sur demande.</p>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--green);text-align:center;">
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);color:var(--cream);margin-bottom:16px;">Parlons de votre projet</h2>
+  <p style="color:rgba(245,240,232,0.65);margin-bottom:32px;">Un premier échange de 30 min pour explorer votre situation. Sans engagement.</p>
+  <a href="contact.html" class="btn btn-gold">Prendre rendez-vous →</a>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><span class="nav-logo">Nexus<span>.</span></span><p>Cabinet de conseil en stratégie et transformation. Nous accompagnons les dirigeants depuis 2008.</p></div>
+    <div class="footer-col"><h4>Navigation</h4><ul><li><a href="../index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Galerie</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGU</a></li><li><a href="#">Confidentialité</a></li><li><a href="#">Cookies</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@nexusconseil.fr">contact@nexusconseil.fr</a></li><li><a href="tel:+33140123456">+33 1 40 12 34 56</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Nexus Conseil SAS</span><span style="display:flex;gap:20px;"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span></div>
+</footer>
+
+<script src="../js/nav.js"></script>
+</body>
+</html>

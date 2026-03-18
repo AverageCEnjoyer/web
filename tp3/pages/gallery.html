@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Galerie — Nexus Conseil</title>
+<meta name="description" content="Découvrez nos réalisations, nos équipes en mission et nos événements."/>
+<meta property="og:title" content="Galerie — Nexus Conseil"/>
+<meta property="og:type" content="website"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+.gallery-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px;}
+.filter-btn{padding:8px 20px;border-radius:99px;border:1px solid var(--border);background:transparent;font-family:'Outfit',sans-serif;font-size:0.82rem;color:var(--muted);cursor:pointer;transition:all 0.2s;letter-spacing:0.05em;}
+.filter-btn:hover,.filter-btn.active{background:var(--green);color:var(--cream);border-color:var(--green);}
+.masonry{columns:3;gap:20px;}
+@media(max-width:900px){.masonry{columns:2;}}
+@media(max-width:500px){.masonry{columns:1;}}
+.gallery-item{break-inside:avoid;margin-bottom:20px;border-radius:10px;overflow:hidden;position:relative;cursor:pointer;}
+.gallery-item img{width:100%;display:block;transition:transform 0.4s;}
+.gallery-item:hover img{transform:scale(1.04);}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 16px 14px;background:linear-gradient(to top,rgba(14,31,24,0.9) 0%,transparent 100%);color:var(--cream);font-size:0.82rem;opacity:0;transform:translateY(6px);transition:all 0.3s;}
+.gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0);}
+.gallery-caption strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1rem;margin-bottom:2px;}
+/* Lightbox */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(14,31,24,0.96);z-index:9999;align-items:center;justify-content:center;padding:40px;}
+#lightbox.open{display:flex;}
+#lightbox img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain;}
+#lb-close{position:absolute;top:20px;right:24px;color:var(--cream);font-size:2rem;cursor:pointer;background:none;border:none;line-height:1;}
+#lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(245,240,232,0.75);font-size:0.85rem;white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html" class="active">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <p class="section-label">Nos réalisations</p>
+  <h1>La <em style="font-style:italic;color:var(--gold);">galerie</em></h1>
+  <p>Équipes en mission, événements, séminaires et coulisses de Nexus Conseil.</p>
+</div>
+
+<section>
+  <div class="gallery-filters">
+    <button class="filter-btn active" data-filter="all">Tout</button>
+    <button class="filter-btn" data-filter="missions">Missions</button>
+    <button class="filter-btn" data-filter="team">Équipe</button>
+    <button class="filter-btn" data-filter="events">Événements</button>
+    <button class="filter-btn" data-filter="bureaux">Bureaux</button>
+  </div>
+
+  <div class="masonry" id="gallery">
+    <div class="gallery-item" data-cat="missions">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g1/400/560"/>
+        <source media="(max-width:900px)" srcset="https://picsum.photos/seed/g1/500/700"/>
+        <img src="https://picsum.photos/seed/g1/600/840" alt="Mission stratégie retail" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Mission Retail 360°</strong>Analyse stratégique — Lyon, 2024</div>
+    </div>
+    <div class="gallery-item" data-cat="team">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g2/400/300"/>
+        <img src="https://picsum.photos/seed/g2/600/450" alt="Équipe en réunion" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Workshop équipe</strong>Stratégie annuelle — Paris, 2024</div>
+    </div>
+    <div class="gallery-item" data-cat="bureaux">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g3/400/500"/>
+        <img src="https://picsum.photos/seed/g3/600/750" alt="Salle de réunion Nexus" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Salle Garamond</strong>Paris 8e</div>
+    </div>
+    <div class="gallery-item" data-cat="events">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g4/400/280"/>
+        <img src="https://picsum.photos/seed/g4/600/420" alt="Conférence annuelle" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Nexus Forum 2024</strong>Palais des Congrès, Paris</div>
+    </div>
+    <div class="gallery-item" data-cat="missions">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g5/400/500"/>
+        <img src="https://picsum.photos/seed/g5/600/750" alt="Diagnostic terrain" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Diagnostic industriel</strong>Secteur automobile — Strasbourg</div>
+    </div>
+    <div class="gallery-item" data-cat="team">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g6/400/400"/>
+        <img src="https://picsum.photos/seed/g6/600/600" alt="Séminaire team Nexus" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Séminaire Annecy</strong>Juin 2024</div>
+    </div>
+    <div class="gallery-item" data-cat="bureaux">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g7/400/270"/>
+        <img src="https://picsum.photos/seed/g7/600/400" alt="Hall d'entrée Nexus" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Réception</strong>Paris 8e</div>
+    </div>
+    <div class="gallery-item" data-cat="events">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g8/400/560"/>
+        <img src="https://picsum.photos/seed/g8/600/840" alt="Gala annuel Nexus" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Gala Nexus 2023</strong>Hôtel Crillon, Paris</div>
+    </div>
+    <div class="gallery-item" data-cat="missions">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g9/400/320"/>
+        <img src="https://picsum.photos/seed/g9/600/480" alt="Présentation client" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Restitution client</strong>CAC40 — Paris, 2024</div>
+    </div>
+    <div class="gallery-item" data-cat="team">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g10/400/480"/>
+        <img src="https://picsum.photos/seed/g10/600/720" alt="Portrait consultants" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Portraits 2024</strong>Nouvelles recrues</div>
+    </div>
+    <div class="gallery-item" data-cat="events">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g11/400/300"/>
+        <img src="https://picsum.photos/seed/g11/600/450" alt="Table ronde" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Table ronde IA</strong>HEC Paris — 2024</div>
+    </div>
+    <div class="gallery-item" data-cat="bureaux">
+      <picture>
+        <source media="(max-width:600px)" srcset="https://picsum.photos/seed/g12/400/500"/>
+        <img src="https://picsum.photos/seed/g12/600/750" alt="Espace collaboratif" loading="lazy"/>
+      </picture>
+      <div class="gallery-caption"><strong>Open space</strong>Espace collaboratif</div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lb-close">✕</button>
+  <img id="lb-img" src="" alt=""/>
+  <div id="lb-caption"></div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><span class="nav-logo">Nexus<span>.</span></span><p>Cabinet de conseil en stratégie et transformation. Nous accompagnons les dirigeants depuis 2008.</p></div>
+    <div class="footer-col"><h4>Navigation</h4><ul><li><a href="../index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Galerie</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGU</a></li><li><a href="#">Confidentialité</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@nexusconseil.fr">contact@nexusconseil.fr</a></li><li><a href="tel:+33140123456">+33 1 40 12 34 56</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Nexus Conseil SAS</span><span style="display:flex;gap:20px;"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span></div>
+</footer>
+
+<script src="../js/nav.js"></script>
+<script>
+// Filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.style.display = (f === 'all' || item.dataset.cat === f) ? 'block' : 'none';
+    });
+  });
+});
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lb-img');
+const lbCap = document.getElementById('lb-caption');
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('img');
+    const cap = item.querySelector('.gallery-caption');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = cap ? cap.textContent.trim() : '';
+    lb.classList.add('open');
+  });
+});
+document.getElementById('lb-close').addEventListener('click', () => lb.classList.remove('open'));
+lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('open'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+</script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contact — Nexus Conseil</title>
+<meta name="description" content="Contactez Nexus Conseil pour un premier échange gratuit. Paris 8e."/>
+<meta property="og:title" content="Contact — Nexus Conseil"/>
+<meta property="og:type" content="website"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start;}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+.contact-info{display:flex;flex-direction:column;gap:28px;}
+.contact-item{display:flex;gap:16px;align-items:flex-start;}
+.contact-icon{width:44px;height:44px;background:rgba(30,58,47,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.contact-item h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--green);margin-bottom:4px;}
+.contact-item p,.contact-item a{font-size:0.88rem;color:var(--muted);}
+.form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
+.form-field label{font-size:0.78rem;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;}
+.form-field label span{color:var(--gold);}
+.form-field input,.form-field select,.form-field textarea,.form-field input[type=range]{
+  background:var(--cream);border:1px solid var(--border);color:var(--text);
+  border-radius:6px;padding:12px 16px;font-family:'Outfit',sans-serif;
+  font-size:0.9rem;outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%;
+}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(30,58,47,0.08);}
+.form-field textarea{resize:vertical;min-height:130px;}
+.form-field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6b5e' fill='none' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;}
+.radio-row{display:flex;flex-wrap:wrap;gap:10px;}
+.radio-row label{display:flex;align-items:center;gap:8px;font-size:0.85rem;color:var(--text);text-transform:none;letter-spacing:0;cursor:pointer;background:var(--cream);border:1px solid var(--border);padding:9px 16px;border-radius:99px;transition:all 0.2s;font-weight:400;}
+.radio-row label:hover{border-color:var(--green);}
+.radio-row input[type=radio]{accent-color:var(--green);}
+.budget-row{display:flex;align-items:center;gap:16px;}
+.budget-val{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--green);font-weight:600;white-space:nowrap;}
+input[type=range]{padding:0;cursor:pointer;accent-color:var(--green);}
+.map-wrap{border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+.map-wrap iframe{width:100%;height:350px;display:block;border:none;}
+.success-msg{display:none;background:rgba(30,58,47,0.08);border:1px solid var(--green);color:var(--green);border-radius:8px;padding:20px 24px;text-align:center;font-size:0.95rem;}
+.success-msg.show{display:block;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <p class="section-label">Échangeons</p>
+  <h1>Nous <em style="font-style:italic;color:var(--gold);">contacter</em></h1>
+  <p>Un premier échange de 30 minutes, sans engagement, pour explorer ensemble votre situation.</p>
+</div>
+
+<section>
+  <div class="contact-grid">
+    <!-- Coordonnées + carte -->
+    <div>
+      <p class="section-label">Nos coordonnées</p>
+      <h2 class="section-title" style="margin-bottom:32px;">Restons en <em>contact</em></h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Adresse</h4>
+            <p>12 rue du Faubourg Saint-Honoré<br/>75008 Paris, France</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Téléphone</h4>
+            <a href="tel:+33140123456">+33 1 40 12 34 56</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:contact@nexusconseil.fr">contact@nexusconseil.fr</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Horaires</h4>
+            <p>Lundi – Vendredi : 9h00 – 18h30<br/>Urgences : <a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrap" style="margin-top:36px;">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=2.295%2C48.866%2C2.325%2C48.876&layer=mapnik&marker=48.871%2C2.310"
+          title="Carte Nexus Conseil Paris"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p style="font-size:0.78rem;color:var(--muted);margin-top:10px;">12 rue du Faubourg Saint-Honoré, Paris 8e · Métro Madeleine / Miromesnil</p>
+    </div>
+
+    <!-- Formulaire -->
+    <div>
+      <p class="section-label">Formulaire de contact</p>
+      <h2 class="section-title" style="margin-bottom:32px;">Votre <em>demande</em></h2>
+      <div id="success" class="success-msg">✅ Message envoyé ! Nous vous répondrons sous 24h.</div>
+      <form id="contact-form" novalidate>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="form-field">
+            <label for="c-nom">Nom <span>*</span></label>
+            <input type="text" id="c-nom" name="nom" placeholder="Dupont" autocomplete="family-name" required/>
+          </div>
+          <div class="form-field">
+            <label for="c-prenom">Prénom <span>*</span></label>
+            <input type="text" id="c-prenom" name="prenom" placeholder="Marie" autocomplete="given-name" required/>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="c-email">Email professionnel <span>*</span></label>
+          <input type="email" id="c-email" name="email" placeholder="marie@entreprise.fr" autocomplete="email" required/>
+        </div>
+
+        <div class="form-field">
+          <label for="c-tel">Téléphone</label>
+          <input type="tel" id="c-tel" name="tel" placeholder="06 12 34 56 78"
+                 pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+                 autocomplete="tel"/>
+        </div>
+
+        <div class="form-field">
+          <label for="c-societe">Société</label>
+          <input type="text" id="c-societe" name="societe" placeholder="Votre entreprise" autocomplete="organization"/>
+        </div>
+
+        <div class="form-field">
+          <label for="c-poste">Poste occupé</label>
+          <select id="c-poste" name="poste" autocomplete="organization-title">
+            <option value="">Sélectionner…</option>
+            <option>Dirigeant / PDG / DG</option>
+            <option>Directeur Général Adjoint</option>
+            <option>Directeur Financier (CFO)</option>
+            <option>Directeur des Opérations (COO)</option>
+            <option>Directeur des Systèmes d'Information (DSI)</option>
+            <option>Directeur RH (DRH)</option>
+            <option>Directeur Commercial</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>Type de besoin <span>*</span></label>
+          <div class="radio-row">
+            <label><input type="radio" name="besoin" value="strategie" required/> Stratégie</label>
+            <label><input type="radio" name="besoin" value="digital"/> Digital</label>
+            <label><input type="radio" name="besoin" value="finance"/> Finance</label>
+            <label><input type="radio" name="besoin" value="rh"/> RH</label>
+            <label><input type="radio" name="besoin" value="autre"/> Autre</label>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="c-budget">Budget indicatif : <span id="budget-display" style="color:var(--green);font-weight:500;">50 000 €</span></label>
+          <div class="budget-row">
+            <input type="range" id="c-budget" name="budget" min="10000" max="500000" step="5000" value="50000"/>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--muted);margin-top:4px;">
+            <span>10 000 €</span><span>500 000 €+</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="c-delay">Délai souhaité</label>
+          <select id="c-delay" name="delai">
+            <option value="">Sélectionner…</option>
+            <option>Urgent (moins d'1 mois)</option>
+            <option>Court terme (1–3 mois)</option>
+            <option>Moyen terme (3–6 mois)</option>
+            <option>Long terme (6+ mois)</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="c-msg">Décrivez votre projet <span>*</span></label>
+          <textarea id="c-msg" name="message" placeholder="Décrivez brièvement votre situation et vos objectifs…" maxlength="1000" required></textarea>
+          <span style="font-size:0.75rem;color:var(--muted);" id="msg-count">0 / 1000</span>
+        </div>
+
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:24px;">
+          <input type="checkbox" id="c-rgpd" name="rgpd" required style="width:auto;margin-top:3px;accent-color:var(--green);"/>
+          <label for="c-rgpd" style="font-size:0.83rem;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;">
+            J'accepte que mes données soient utilisées pour traiter ma demande, conformément à notre <a href="#" style="color:var(--green);">politique de confidentialité</a>. <span style="color:var(--gold);">*</span>
+          </label>
+        </div>
+
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:32px;">
+          <input type="checkbox" id="c-newsletter" name="newsletter" style="width:auto;margin-top:3px;accent-color:var(--green);"/>
+          <label for="c-newsletter" style="font-size:0.83rem;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;">
+            Je souhaite recevoir la newsletter Nexus Conseil (actualités, insights stratégiques).
+          </label>
+        </div>
+
+        <input type="hidden" name="source" value="contact-page"/>
+        <input type="hidden" name="timestamp" id="ts"/>
+
+        <button type="submit" class="btn btn-green" style="width:100%;justify-content:center;padding:16px;">
+          Envoyer ma demande →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><span class="nav-logo">Nexus<span>.</span></span><p>Cabinet de conseil en stratégie et transformation. Nous accompagnons les dirigeants depuis 2008.</p></div>
+    <div class="footer-col"><h4>Navigation</h4><ul><li><a href="../index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Galerie</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Légal</h4><ul><li><a href="#">Mentions légales</a></li><li><a href="#">CGU</a></li><li><a href="#">Confidentialité</a></li><li><a href="#">Cookies</a></li></ul></div>
+    <div class="footer-col"><h4>Suivez-nous</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter / X</a></li><li><a href="#">YouTube</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Nexus Conseil SAS — SIRET 123 456 789 00012 — RCS Paris</span>
+    <span style="display:flex;gap:20px;"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Plan du site</a></span>
+  </div>
+</footer>
+
+<script src="../js/nav.js"></script>
+<script>
+document.getElementById('ts').value = new Date().toISOString();
+const budgetInput = document.getElementById('c-budget');
+const budgetDisplay = document.getElementById('budget-display');
+budgetInput.addEventListener('input', () => {
+  const v = parseInt(budgetInput.value);
+  budgetDisplay.textContent = v >= 500000 ? '500 000 €+' : v.toLocaleString('fr-FR') + ' €';
+});
+const msg = document.getElementById('c-msg');
+const msgCount = document.getElementById('msg-count');
+msg.addEventListener('input', () => { msgCount.textContent = msg.value.length + ' / 1000'; });
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!form.checkValidity()) { form.querySelector(':invalid').reportValidity(); return; }
+  form.style.display = 'none';
+  document.getElementById('success').classList.add('show');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
